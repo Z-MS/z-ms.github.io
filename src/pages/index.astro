@@ -2,10 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import Card from '../components/Card.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
-const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
+const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
 );
 ---
@@ -17,14 +16,19 @@ const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 	<body>
 		<Header/>
 		<main>
-			<h1>Welcome to <span class="text-gradient">Zayyad's Website</span></h1>
-			<ul role="list" class="link-card-grid">
-				{ posts.map((post) => (
-					<Card
-						href={post.url}
-						title={post.frontmatter.title}
-						body="Zayyad's first post"
-					/>
+			<h1>Programming Tales</h1>
+			<ul>
+				{posts.map((post) => (
+					<li>
+						<a href={post.url}>{post.frontmatter.title}</a>
+						<time class="date" datetime={post.frontmatter.publishDate}>
+							{new Date(post.frontmatter.publishDate).toLocaleDateString('en-us', {
+								year: 'numeric',
+								month: 'short',
+								day: 'numeric',
+							})}
+							</time>
+					</li>
 				))}
 			</ul>
 		</main>
@@ -34,45 +38,28 @@ const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 
 
 <style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-
 	h1 {
 		margin: 2rem 0;
 	}
 
 	main {
-		margin: auto;
-		padding: 1em;
+		margin: 0 auto;
+		padding: 1rem;
 		max-width: 60ch;
 	}
 
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
+	ul {
 		padding: 0;
 	}
+
+	li > a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    time {
+        font-size: 0.875rem;
+        font-style: italic;
+    }
+
 </style>

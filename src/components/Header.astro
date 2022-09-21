@@ -1,18 +1,18 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
 ---
 
 <header>
 	<a href="/"><img src="/assets/zms.svg" width="60" height="50" alt="Website logo"></a>
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
+		<HeaderLink href="/">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
 	</nav>
 </header>
 <style>
 	header {
+		border-bottom: 1px solid #e4e1ff;
+		background-color: #ffffff;
 		padding: 0.25rem 1rem;
 		display: flex;
 		align-items: center;

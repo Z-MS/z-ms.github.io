@@ -25,12 +25,14 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	background-color: #fff;
+	color: #333;
 }
 
 .container {
 	margin: 0 auto;
 	display: flex;
 	padding: 1em;
+	max-width: 80%;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -48,6 +50,11 @@ body {
 		Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+h1, h2, p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 h3,
 h4,
 h5,
@@ -58,7 +65,8 @@ b {
 }
 
 a {
-	color: #3273dc;
+	color: #4f39fa;
+	text-decoration: none;
 }
 
 nav a {
@@ -68,6 +76,11 @@ nav a {
 textarea {
 	width: 100%;
 	font-size: 16px;
+}
+
+li {
+	margin-bottom: 0.5rem;
+	list-style: none;
 }
 
 input {
@@ -105,4 +118,8 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+
+.date {
+	color: grey;
 }

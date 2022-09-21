@@ -18,10 +18,11 @@ const { frontmatter } = Astro.props;
         <Header/>
         <div class="container">
             <h2>{frontmatter.title}</h2>
-            <small>{frontmatter.publishDate}</small>
+            <small class="date">{frontmatter.publishDate}</small>
             <slot></slot>
         </div>
         <Footer/>
     </body>
 </html>
+
 
