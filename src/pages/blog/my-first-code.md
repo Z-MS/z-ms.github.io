@@ -68,6 +68,7 @@ I upgraded the equation solver a few times. Here's the latest version:
 ![Latest version of Equation Solver styled with Vanilla CSS](../../assets/my-first-code/newer.png)
 
 I made one with Bootstrap too:
+
 ![Latest version of Equation solver styled with Bootstrap](../../assets/my-first-code/bootquation.png)
 
 I think it'll be fun improving it now that I know more about web dev and algebra. Let's see how it goes.
