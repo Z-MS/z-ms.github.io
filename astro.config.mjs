@@ -6,7 +6,7 @@ export default defineConfig({
     markdown: {
         shikiConfig: {
             theme: 'dracula',
-            langs: ['javascript'],
+            langs: ['javascript', 'html'],
             wrap: true
         }
     }
