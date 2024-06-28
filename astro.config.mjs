@@ -12,5 +12,12 @@ export default defineConfig({
     },
     image: {
         service: passthroughImageService()
-    }
+    },
+    integrations: [
+        partytown({
+            config: {
+                forward: ['dataLayer.push'],
+            },
+        }),
+    ]
 });
