@@ -1,11 +1,11 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "My First (Real) Code"
-publishDate: "Dec 28 2023"
+publishDate: "Jun 28 2024"
 ---
 I can't remember the first lines of code I wrote. But I do remember the first real project I worked on.
 
-It was in late 2013, and my cousin, Hamid Abdulmalik Alhassan, a veteran programmer, gave me a task: Create a program to solve Quadratic equations in HTML. And yes, he deliberately said HTML to see how I would handle the challenge. Alhamdulillah, after some research, I realised that the only way I could build the equation solver was using JavaScript (for the logic), and HTML (for the UI).
+It was late 2013, and my cousin, Hamid Abdulmalik Alhassan, (a veteran software developer), gave me a task: Create a program to solve Quadratic equations in HTML. And yes, he deliberately said HTML to see how I would handle the challenge. Alhamdulillah, after some research, I realised that the only way I could build the equation solver was to use JavaScript for the logic, and HTML for the user interface.
 
 After learning the basic JavaScript I needed, and a lot of research, I got the first working version out:
 ![Original quadratic equation solver in action](../../assets/my-first-code/Equation_solver_original.gif)
@@ -49,20 +49,15 @@ Math.sqrt((b*b) - 4*a*c))/
 
 Seeing this again brought back some nice memories, but it also made me cringe. How did I not give spaces between equal (=) signs 😬? 
 
-Anyway, the program works, but there were/are a few things wrong with it. It's okay if you didn't notice, so let's walk through the code. 
+Anyway, the program works, but I made a few mistakes:
 
-First, I stored the variables `a`, `b`, and `c` in an array. I can't remember why I did that. But the next line is worse.
-For some reason, I put `if(a=myArray[0])` as a condition for the calculation to execute. 
-There's two things wrong with this:
-1. **There's no need for an always true condition.** I wanted the code to execute if `a` is the first element of `myArray` (it always is). I thought I needed a condition for the rest of the code to run.
+1. **There's no need for an always `true` condition:** I thought I needed a condition for the rest of the code to run, so I stored the variables `a`, `b`, and `c` in an array. I then check if `a` is the first element of `myArray` (it always is). I later realised that there was no need for this as I worked on later versions of the equation solver.
 
-2. **That's not how to check for equality in JavaScript.** I was still new to programming, so I wrote `=` instead of `==`. This code works, but not in the way I understood it. It first re-assigns `myArray[0]` to `a`, and *then* checks if that value is truthy (not false, NaN, undefined, null, e. t. c). Since the `prompt()` function always returns a string, and strings are truthy, the condition will always evaluate to `true`.
+2. **That's not how to check for equality in JavaScript:** I was still new to programming, so I wrote `=` instead of `==`. This code works, but not in the way I understood it. It first re-assigns `myArray[0]` to `a`, and *then* checks if that value is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) (not `false`, `NaN`, `undefined`, `null`, e. t. c). Since the `prompt()` function always returns a string, and strings are truthy, the condition will always evaluate to `true`.
 
+In short, I made some logical mistakes when writing the program, but it works because the syntax is correct. JavaScript allows you to get away with a lot, which makes it easy for you to introduce bugs. With great power comes great responsibility.
 
-In short, the program is partly wrong (logically), but it's syntactically correct. 
-This code shows that I didn't fully understand how some programming constructs worked. It also showed that JavaScript allows you to get away with a lot. The way JavaScript deals with evaluating boolean expressions helped a lot.
-
-The equation solver also had a limitation, It can't handle equations that have complex roots. 
+The equation solver has one important limitation; It can't handle equations that have complex roots. So if you're studying university-level algebra, I suggest you use something else.
 
 I upgraded the equation solver a few times. Here's the latest version:
 ![Latest version of Equation Solver styled with Vanilla CSS](../../assets/my-first-code/newer.png)
@@ -70,6 +65,8 @@ I upgraded the equation solver a few times. Here's the latest version:
 I made one with Bootstrap too:
 
 ![Latest version of Equation solver styled with Bootstrap](../../assets/my-first-code/bootquation.png)
+
+You can check out [all versions of the equation solver]() on GitHub
 
 I think it'll be fun improving it now that I know more about web dev and algebra. Let's see how it goes.
 
