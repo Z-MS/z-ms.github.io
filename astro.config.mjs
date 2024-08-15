@@ -1,5 +1,4 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
-import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,12 +12,5 @@ export default defineConfig({
     },
     image: {
         service: passthroughImageService()
-    },
-    integrations: [
-        partytown({
-            config: {
-                forward: ['dataLayer.push'],
-            },
-        }),
-    ]
+    }
 });
