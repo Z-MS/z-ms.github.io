@@ -47,11 +47,11 @@ Math.sqrt((b*b) - 4*a*c))/
 </html>
 ```
 
-Seeing this again brought back some nice memories, but it also made me cringe. How did I not give spaces between equal (=) signs 😬? 
+Seeing this again brought back some nice memories, but it also made me wonder why I didn't realise that giving spaces between equal signs makes your code not ugly. 
 
 Anyway, the program works, but I made a few mistakes:
 
-1. **There's no need for an always `true` condition:** I thought I needed a condition for the rest of the code to run, so I stored the variables `a`, `b`, and `c` in an array. I then check if `a` is the first element of `myArray` (it always is). I later realised that there was no need for this as I worked on later versions of the equation solver.
+1. **There's no need for an always `true` condition:** I thought I needed a condition for the rest of the code to run, so I stored the variables `a`, `b`, and `c` in an array. Then I checked if `a` is the first element of `myArray` (it always is). I later realised that there was no need for this when I worked on later versions of the equation solver.
 
 2. **That's not how to check for equality in JavaScript:** I was still new to programming, so I wrote `=` instead of `==`. This code works, but not in the way I understood it. It first re-assigns `myArray[0]` to `a`, and *then* checks if that value is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) (not `false`, `NaN`, `undefined`, `null`, e. t. c). Since the `prompt()` function always returns a string, and strings are truthy, the condition will always evaluate to `true`.
 
@@ -70,4 +70,4 @@ You can check out [all versions of the equation solver]() on GitHub
 
 I think it'll be fun improving it now that I know more about web dev and algebra. Let's see how it goes.
 
-And that's the story. I'm grateful to Allah, my cousin, and all the people (online and offline) that I've learned from and continue to learn from. It's been a wonderful journey so far, and I'm excited for what the future holds. 
+And that's the story. I'm grateful to Allah, my cousin, and all the people (online and offline) that I've learned from and continue to learn from. It's been a wonderful journey so far and I'm excited for what the future holds. 
