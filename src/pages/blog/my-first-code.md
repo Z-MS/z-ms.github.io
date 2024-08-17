@@ -47,7 +47,7 @@ Math.sqrt((b*b) - 4*a*c))/
 </html>
 ```
 
-Seeing this again brought back some nice memories, but it also made me wonder why I didn't realise that giving spaces between equal signs makes your code not ugly. 
+Seeing this again brought back some nice memories, but it also made me wonder why I didn't give spaces between equal signs. 
 
 Anyway, the program works, but I made a few mistakes:
 
