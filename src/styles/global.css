@@ -94,10 +94,10 @@ table {
 	width: 100%;
 }
 
-/* img {
-	width: 100%;
-	aspect-ratio: 1/1;
-} */
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 code {
 	padding: 2px 5px;

@@ -8,6 +8,7 @@ I can't remember the first lines of code I wrote. But I do remember the first re
 It was late 2013, and my cousin, Hamid Abdulmalik Alhassan, (a veteran software developer), gave me a task: Create a program to solve Quadratic equations in HTML. And yes, he deliberately said HTML to see how I would handle the challenge. Alhamdulillah, after some research, I realised that the only way I could build the equation solver was to use JavaScript for the logic, and HTML for the user interface.
 
 After learning the basic JavaScript I needed, and a lot of research, I got the first working version out:
+
 ![Original quadratic equation solver in action](../../assets/my-first-code/Equation_solver_original.gif)
 
 And here's the code:
