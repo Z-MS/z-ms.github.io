@@ -4,12 +4,12 @@ title: "Unit Testing Adventures (Part 1)"
 publishDate: "Aug 17 2024"
 ---
 
-I finally got an excuse to learn unit testing. With the grace of Allah, I built 3 quiz games. Two of these games involve listening to a sound and choosing the option that matches the sound. Here's what one of them looks like:
+I finally got an excuse to learn unit testing. With the grace of Allah, I built 2 quiz games where the player listens to a sound and matches it with the correct option. Here's what one of the games look like:
 
 ![Playing the animal sounds quiz game](../../assets/unit-testing-1/animal-sounds-game.gif)
 
-When I started working on the last quiz game, I realised I was tired of copying the quiz generation code from the games I built earlier. Though I had to tweak some of the details for each quiz, I used the same pattern for generating questions. Also, I ran into some weird cases, like the code generating more questions and options than I wanted, or generating questions without answers in them.
-So, I took all these issues as a sign to build a sound MCQ (multiple-choice questions) utility and use the opportunity to learn unit testing.
+When I started working on the last quiz game, I realised I was tired of copying the quiz generation code from the one I built earlier. Though I had to tweak some of the details for each quiz, I used the same pattern for generating questions. I also ran into some weird cases, like the code generating more questions and options than I wanted, or generating questions without answers in them.
+I took all these issues as a sign to build a sound MCQ (multiple-choice questions) utility, and use the opportunity to learn unit testing.
 
 ## Why Unit Testing?
 
@@ -21,4 +21,4 @@ I wanted to use Vitest because I've had a good experience building projects with
 
 So, I downloaded Jest and got to work.
 
-In the next article, I'll talk about the mistakes I made writing my first tests, In shaa Allah. 
+In the [next article](./unit-testing-2), I'll talk about the mistakes I made writing my first tests, In shaa Allah. 
