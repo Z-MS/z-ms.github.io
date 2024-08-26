@@ -36,6 +36,6 @@ Alhamdulillah, after much instropection, it became clear that I was supposed to 
 
 Here's the implementation:
 
-![First correct implementation of quiz generator](../../assets/unit-testing-2/first-correct-implementation.png)
+![GitHub diff of the first correct implementation of quiz generator](../../assets/unit-testing-2/first-correct-implementation.png)
 
 In the next post, I'll cover more Jest-specific topics and funny incidents with JavaScript array functions, in shaa Allah. 
