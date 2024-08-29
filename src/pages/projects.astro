@@ -1,0 +1,76 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html>
+    <head>
+        <BaseHead title="Projects"/>
+    </head>
+    <body>
+        <Header/>
+        <div class="container">
+            <p class="project__intro">A list of projects I've worked on since I began programming.</p>
+            <div id="projects">
+                <dl>
+                    <dt><a href="https://github.com/Z-MS/animal-sounds">Animal sounds</a> | <span class="technologies">Web (Vue.js, Bootstrap)</span></dt>
+                    <dd>A quiz where you match an animal's sound to its name</dd>
+                
+                    <dt><a href="https://github.com/Z-MS/DSAViz-Java"> DSAViz</a> | <span class="technologies">Desktop (JavaFX, Scene Builder)</span></dt>
+                    <dd>An algorithm visualiser containing animations and lessons for algorithms and data structures</dd>
+                
+                    <dt><a href="https://github.com/Z-MS/DSAViz">Linear Search Animation</a> | <span class="technologies"> Web (JavaScript, CSS Animations, HTML)</span></dt>
+                    <dd>An animation of the linear search algorithm for non-technical people</dd>
+                
+                    <dt><a href="https://github.com/Z-MS/srs">Student registration system</a> | <span class="technologies"> Web (Laravel, Alpine.js, Livewire, Tailwind CSS)</span></dt>
+                    <dd>A student/staff registration and management system for schools</dd>
+                
+                    <dt><a href="https://github.com/Z-MS/lightbulbAR">LightbulbAR</a> |<span class="technologies"> Web (AR.js, Three.js, Three.interactive, HTML)</span></dt>
+                    <dd>A simulation of the lightbulb, switch, and battery experiment in augmented reality (AR)</dd>
+                
+                    <dt><a href="https://github.com/Z-MS/Zaad">Zaad</a> |<span class="technologies"> Web (Vue.js, IndexedDB, Vanilla CSS) </span></dt>
+                    <dd>Note-taking and tasks manager</dd>
+                
+                    <dt>Arabic alphabet quiz | <span class="technologies"> Web (HTML, CSS, JavaScript)</span></dt>
+                    <dd>Match arabic alphabets to their sounds</dd>
+                
+                    <dt>Mufradaat |<span class="technologies"> Android [Hybrid] (HTML, CSS, JavaScript) </span></dt>
+                    <dd>English-Arabic vocabulary app</dd>
+                
+                    <dt>Riddle game |<span class="technologies"> Web (JavaScript, Bootstrap, HTML)</span></dt>
+                    <dd>Basic riddles</dd>
+                
+                    <dt>Interactive periodic table |<span class="technologies"> Web (Jquery, HTML, CSS)</span></dt>
+                    <dd>An app for viewing details of the first 20 elements of the periodic table</dd>
+                
+                    <dt><a href="https://github.com/Z-MS/Equation-solver">Equation solver</a> |<span class="technologies"> Web (JavaScript, HTML, CSS)</span></dt>
+                    <dd>An app for solving quadratic equations using the quadratic formula</dd>
+                </dl>
+            </div>
+        <Footer/>
+    </body>
+</html>
+
+<style>
+    .project__intro {
+        font-size: 1.15rem;
+    }
+
+    dt {
+        font-weight: 500;
+        color: rgb(66, 66, 66);
+    }
+
+    dd {
+        margin-top: 0.25rem;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+    }
+
+    .technologies {
+        font-weight: 500;
+        color: rgb(60, 59, 59);
+    }
+
+</style>
