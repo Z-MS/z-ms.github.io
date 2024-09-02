@@ -21,4 +21,4 @@ I wanted to use Vitest because I've had a good experience building projects with
 
 So, I downloaded Jest and got to work.
 
-In the [next article](./unit-testing-2), I'll talk about the mistakes I made writing my first tests, In shaa Allah. 
+In the [next article](../blog/unit-testing-2), I'll talk about the mistakes I made writing my first tests, In shaa Allah. 

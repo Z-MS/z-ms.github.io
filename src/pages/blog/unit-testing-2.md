@@ -4,7 +4,7 @@ title: "Unit Testing Adventures (Part 2)"
 publishDate: "Aug 22 2024"
 ---
 
-The [previous post](./unit-testing-1) ended with me installing Jest. To understand this article better, here's the blueprint of the quiz generator I drew before writing tests. It contains all the expected inputs, output and data types.
+The [previous post](./unit-testing-1) ended with me installing Jest. To understand this post better, here's the blueprint of the quiz generator I drew before writing tests. It contains all the expected inputs, output and data types.
 
 ![Diagram of the MCQ generator showing input parameters and a set of outputs](../../assets/unit-testing-2/mcq-map.jpg)
 
@@ -26,11 +26,11 @@ To be honest, I can't remember exactly what caused the problem, but I wrote a no
 ![A GitHub diff of the second set of unit tests](../../assets/unit-testing-2/second-tests.png)
 *Test*
 
-I ran into the same problem. But this time, I was testing very specific outputs from the function without checking the inputs. These failures told me that something was wrong with my mental model of "red-green-refactor". I went back to the diagram again.
+I ran into the same problem. But this time, I was testing very specific outputs from the function without checking the inputs. These failures told me that something was wrong with my mental model of unit testing.
 
 ## The Actual Solution
 
-Alhamdulillah, after much instropection, it became clear that I was supposed to validate the inputs first, and not the output. I started from scratch, and this time, I was happy to see that the newer tests weren't breaking the older ones.
+Alhamdulillah, after staring at the diagram for a while and thinking deeply, it became clear that I was supposed to validate the inputs first, and not the output. I started from scratch, and this time, I was happy to see that the newer tests weren't breaking the older ones.
 
 ![First correct set of tests passing](../../assets/unit-testing-2/first-correct-tests-passed.png)
 
@@ -38,4 +38,4 @@ Here's the implementation:
 
 ![GitHub diff of the first correct implementation of quiz generator](../../assets/unit-testing-2/first-correct-implementation.png)
 
-In the next post, I'll cover more Jest-specific topics and funny incidents with JavaScript array functions, in shaa Allah. 
+In the next post, I'll cover more Jest-specific topics and incidents with JavaScript array functions, in shaa Allah.
