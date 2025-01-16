@@ -16,6 +16,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	<body>
 		<Header/>
 		<main>
+			<script defer src="https://cdn.customgpt.ai/js/chat.js"></script> <script defer> (function(){ function init(){ CustomGPT.init({ p_id:'58128', p_key:'af07c95bed312974272f0988474bf828' }) } document.readyState === 'complete' ? init() : window.addEventListener('load', init); })(); </script> 
 			<h1>Programming Tales</h1>
 			<ul>
 				{posts.map((post) => (
