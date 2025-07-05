@@ -5,10 +5,8 @@ publishDate: "Sep 1 2024"
 ---
 
 I was happy to find out that Jest had methods (matchers) for checking errors. In hindsight, it makes perfect sense and is something that *should* be there. I guess being a newbie makes you impressed with things that are not so impressive, per se.
-toThrow.
 
-One challenge I faced was that I didn't know I had to wrap the `generateQuiz` function in a function to use `toThrow`. I saw the answer in the docs though.
-Doing the error checks was cool and pretty smooth
+One challenge I faced was that I didn't know I had to wrap `generateQuiz()` in a function to use `toThrow`. I saw the answer in the docs though. Doing the error checks was cool and pretty smooth
 
 I also used some nice matchers for working with numbers, like `toBeEqual` and `toBeGreater` than. Again, it shouldn't have surprised me to see them there, but it just gave me this feeling, a happy feeling that Jest is a complete tool that you can use to cover a lot of cases.
 
@@ -25,7 +23,9 @@ I thought all the options needed to be part of options bank, but I was wrong. In
 Alhamdulillah, using the library in my quizzes didn't require much code changes. A few renames here, property changes there, and everything was working fine.
 
 ## What's next?
-I want to separate the tests, and from what I saw in the docs, I can group similar tests using `describe`, so that's one.
-I want to see if there's room for improvement, whether some tests are useless or not
-I also want to document my library using JSDocs syntax
-And finally, I want to make it easy to import in my quizzes. Jest only has experimental support for ES6 modules, so I use CommonJS module syntax for the library, which I then have to change to ES6 modules when I use the library in my quiz apps. It's not too stressful, but it's a bit annoying.
+I want to:
+- Separate the tests. From what I saw in the docs, I can group similar tests using `describe`.
+- See if there's room for improvement, whether some tests are useless or not.
+- document my library using JSDoc syntax.
+- make it easy to import in my quizzes.
+Jest currently has experimental support for ES6 modules, so I use CommonJS module syntax for the library. When I use the library in my quiz apps, I have to change it to ES6 modules. It's not too stressful, but it's a bit annoying.
