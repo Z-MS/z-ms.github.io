@@ -27,5 +27,4 @@ I want to:
 - Separate the tests. From what I saw in the docs, I can group similar tests using `describe`.
 - See if there's room for improvement, whether some tests are useless or not.
 - document my library using JSDoc syntax.
-- make it easy to import in my quizzes.
-Jest currently has experimental support for ES6 modules, so I use CommonJS module syntax for the library. When I use the library in my quiz apps, I have to change it to ES6 modules. It's not too stressful, but it's a bit annoying.
+- make it easy to import the library in my quizzes. At the time of writing, Jest has experimental support for ES6 modules, so I wrote the library using CommonJS modules syntax. Unfortunately, this means I have to manually convert the imports/exports to ES6 modules syntax when I use it in my quizzes. It's not much work, but it's a bit annoying.
