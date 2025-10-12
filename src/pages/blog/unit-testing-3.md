@@ -29,4 +29,7 @@ I want to:
 - document my library using JSDoc syntax.
 - make it easy to import in my quizzes.
 
-Jest currently has experimental support for ES6 modules, so I use CommonJS module syntax for the library. When I use the library in my quiz apps, I have to change it to ES6 modules. It's not too stressful, but it's a bit annoying.
+Jest currently has experimental support for ES6 modules, so I used the CommonJS module syntax to build the library. When I use the library in my quiz apps, I have to import it using ES6 modules syntax, which involves changing `module.exports` to `export {}`. It's not too stressful, but it's a bit annoying.
+
+### UPDATE (12/10/2025)
+Maybe there's a standard way of supporting both module syntaxes, but I haven't checked since I barely work on the project.
