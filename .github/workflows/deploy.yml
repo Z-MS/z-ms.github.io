@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lychee Broken Link Checker
-      uses: lycheeverse/lychee-action@v2.8.0
+        uses: lycheeverse/lychee-action@v2.8.0
   build:
     runs-on: ubuntu-latest
     steps:
