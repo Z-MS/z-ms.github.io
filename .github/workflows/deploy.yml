@@ -20,8 +20,6 @@ jobs:
     steps:
       - name: Lychee Broken Link Checker
         uses: lycheeverse/lychee-action@v2.8.0
-        with:
-          args: "."
   build:
     runs-on: ubuntu-latest
     steps:
