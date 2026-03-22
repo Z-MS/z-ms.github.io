@@ -15,11 +15,11 @@ permissions:
   id-token: write
 
 jobs:
-  markdown-link-check:
+  linkChecker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: tcort/github-action-markdown-link-check@v1
+      - name: Lychee Broken Link Checker
+        uses: lycheeverse/lychee-action@v2.8.0
   build:
     runs-on: ubuntu-latest
     steps:
